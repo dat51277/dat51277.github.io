@@ -43,6 +43,30 @@ padding:20px;
 color:#777;
 }
 </style>
+  .project-images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images in a row */
+  gap: 12px;
+  margin-top: 12px; /* space above images */
+}
+
+.project-images img{
+  width: 100%;
+  height: 170px;          /* adjust if you want */
+  object-fit: cover;      /* crops nicely to same size */
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* Optional: make it responsive on phones */
+@media (max-width: 700px){
+  .project-images{
+    grid-template-columns: 1fr; /* stack images */
+  }
+  .project-images img{
+    height: auto;
+  }
+}
 </head>
 
 <body>
@@ -76,7 +100,15 @@ Check out my and portfolio to see the projects I've been working on and follow m
 <h3>Colorfull</h3>
   <p class="project-date">14 July - 16 July 2023</p>
 <p>Colorfull is a 2D puzzle platformer game. It was published on itch.io during the BUV Game Jam 2023 event, which featured the theme "Stronger Together". The game is similar to “Fireboy & Watergirl” but only need one player, the player has to switch between two characters. I was responsible for helping come up with ideas with the leader, and my main part was design, making the UI/UX and the last cutscene, which enhance enjoyable for the player. This project helped me learn how to teamwork and communicate with team members, which enhanced my experience for my future career.</p>
-<a href="https://buvjammedjam.itch.io/colorfull">Project Link</a>
+<div class="project-images">
+    <img src="images/colorfull-1.jpg" alt="Colorfull screenshot 1">
+    <img src="images/colorfull-2.jpg" alt="Colorfull screenshot 2">
+    <img src="images/colorfull-3.jpg" alt="Colorfull screenshot 3">
+
+    <!-- 1 image under the first 3 -->
+    <img src="images/colorfull-4.jpg" alt="Colorfull screenshot 4">
+  </div>
+  <a href="https://buvjammedjam.itch.io/colorfull">Project Link</a>
 </div>
 
 <div class="project">
